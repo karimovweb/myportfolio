@@ -1,7 +1,7 @@
 ﻿const langArr = {
    'langText': {
-      'ru': 'Russian',
-      'en': 'Английский',
+      'ru': 'Английский',
+      'en': 'Russian',
    },
    'unit': {
       'ru': 'Создаю качественный сайт',
