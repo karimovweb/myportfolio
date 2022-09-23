@@ -93,7 +93,7 @@ function isEmail(email){
 
 document.querySelector(".form__btn").onclick = function () {
  
-  let message = document.querySelector(".form__inp1").value + " ; " + document.querySelector(".form__inp2").value + " ; " + document.querySelector(".form__inp3").value + " ; " + document.querySelector(".form__inp4").value + " ; ";
+  let message = "Name:" + document.querySelector(".form__inp1").value + " ; " + "Email:"  + document.querySelector(".form__inp2").value + " ; " +  "Number:" +  document.querySelector(".form__inp3").value + " ; " +  "Coment:" +  document.querySelector(".form__inp4").value + " ; ";
   console.log(message);
   const token = "5542100031:AAFHdqpPU7HE3HNfjdWs87uyIoWNxzTJDJQ";
   let url = 'https://api.telegram.org/bot'+ token +'/sendMessage?chat_id=1532198392&text=+'
