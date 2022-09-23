@@ -50,6 +50,9 @@ body::-webkit-scrollbar {
     border-radius: 2px !important;
 }
 
+.scroll i{
+    user-select: none;
+}
 .scroll {
     position: fixed;
     top: 0;
@@ -57,7 +60,6 @@ body::-webkit-scrollbar {
     width: 10px;
     height: 100vh;
     z-index: 98;
-    user-select: none;
 }
 
 .fa-cog {
