@@ -57,6 +57,7 @@ body::-webkit-scrollbar {
     width: 10px;
     height: 100vh;
     z-index: 98;
+    user-select: none;
 }
 
 .fa-cog {
