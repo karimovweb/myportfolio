@@ -1,6 +1,6 @@
 :root {
-  --white: rgba(255, 255, 255, 0.878);
-  --basic: #6b8a9c;
+  --white: #fff;
+  --basic: #11a192;
   --basic-text: #0e2541;
   --toggle-bg: url('../../images/svg/dark.svg');
   --lang: url('../../images/png/usa.png')
@@ -9,8 +9,8 @@
 
 :root[date-theme='dark'] {
   --white: #222222;
-  --basic: #57778a;
-  --basic-text: rgba(255, 255, 255, 0.813);
+  --basic: #11a192;
+  --basic-text: #fff;
   --toggle-bg: url('../../images/svg/light.svg');
 }
 
@@ -401,6 +401,13 @@ body::-webkit-scrollbar {
           border-radius: 2px !important;
 }
 
+.scroll i {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .scroll {
   position: fixed;
   top: 0;
@@ -485,6 +492,10 @@ button {
   background-image: var(--toggle-bg);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-user-select: noen;
+     -moz-user-select: noen;
+      -ms-user-select: noen;
+          user-select: noen;
 }
 
 .header {
@@ -683,7 +694,7 @@ button {
           transform: translateX(140px);
 }
 
-.header-list ~ .indicator {
+.header-list:nth-child(4).active ~ .indicator {
   -webkit-transform: translateX(210px);
       -ms-transform: translateX(210px);
           transform: translateX(210px);
@@ -869,6 +880,7 @@ button {
   margin: 150px 0;
   position: relative;
 }
+
 .aboutMe-item {
   position: absolute;
   top: 50%;
@@ -1112,12 +1124,12 @@ button {
 }
 
 .portfolio-list .hidden {
-  top: -5000px;
-  -webkit-backdrop-filter: invert(0.9);
-          backdrop-filter: invert(0.9);
-  -webkit-transition: 1s ;
-  -o-transition: 1s ;
-  transition: 1s ;
+  top: -100%;
+  -webkit-backdrop-filter: invert(0.7);
+          backdrop-filter: invert(0.7);
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
   z-index: -2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1133,10 +1145,6 @@ button {
           justify-content: center;
 }
 
-.portfolio-list:hover .hidden {
-  z-index: 2;
-  top: 0;
-}
 .portfolio-list .hidden__btn {
   width: 250px;
   height: 50px;
@@ -1149,6 +1157,10 @@ button {
   cursor: pointer;
 }
 
+.portfolio-list:hover .hidden {
+  z-index: 2;
+  top: 0;
+}
 
 .portfolio .allProjects-btn {
   width: 170px;
@@ -1244,7 +1256,6 @@ button {
   -o-object-fit: contain;
      object-fit: contain;
   z-index: 2;
-  overflow: hidden;
 }
 
 .mobile-portfolio__img {
@@ -1255,7 +1266,7 @@ button {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   max-width: 95%;
-  max-height: 90%;
+  max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -1328,7 +1339,7 @@ button {
 .contact {
   width: 100%;
   height: auto;
-  background-color: var(--basic);
+  background-color: tomato;
   margin-top: 50px;
   padding: 50px 0;
 }
@@ -1500,7 +1511,7 @@ button {
   height: 20px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  background-color: var(--basic);
+  background-color: tomato;
   position: absolute;
 }
 
@@ -1547,7 +1558,7 @@ button {
 }
 
 .contact-form form .form__btn {
-  width: 200px;
+  width: 100%;
   height: 50px;
   -webkit-border-radius: 20px;
           border-radius: 20px;
@@ -1562,10 +1573,8 @@ button {
 }
 
 .contact-form form .form__btn:hover {
-  background-color: #124686;
-  transform: scale(.9);
+  background-color: #11a192;
 }
-
 
 .footer {
   width: 100%;
@@ -1596,7 +1605,6 @@ button {
   font-weight: 400px;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  user-select: none;
 }
 
 .footer__info i {
