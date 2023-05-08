@@ -5,7 +5,7 @@ body, .header {
     color: #fff
   }
 .header .indicator {
-    background-color: darkblue;
+    background-color: #1154a1;
 }
 .header .indicator {
     border: 6px solid #222222;
@@ -23,3 +23,5 @@ body, .header {
 .home-title__info-text, .cooperate__info-text, .technology-list__info {
     color: grey;
 }
+/* background: rgb(36,88,131);
+background: linear-gradient(90deg, rgba(36,88,131,1) 18%, rgba(25,23,135,1) 85%); */
