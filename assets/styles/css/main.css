@@ -401,29 +401,6 @@ body::-webkit-scrollbar {
           border-radius: 2px !important;
 }
 
-.scroll i {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.scroll {
-  position: fixed;
-  top: 0;
-  right: 0px;
-  width: 10px;
-  height: 100vh;
-  z-index: 98;
-}
-
-.fa-cog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  color: var(--basic-text);
-  font-size: 30px;
-}
 
 a {
   text-decoration: none;
@@ -2056,9 +2033,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .scroll {
-    display: none;
-  }
   .themeBtn {
     display: none;
   }
