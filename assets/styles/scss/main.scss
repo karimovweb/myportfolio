@@ -409,7 +409,7 @@ button {
         width: 450px;
         height: 450px;
         border-radius: 50%;
-        border: 10px solid var(--basic);
+        border: 10px solid #6a89cc;
 
         &__img {
             position: absolute;
@@ -1182,5 +1182,4 @@ button {
   }
   
  
-
-@import './media'
+@import 'media';

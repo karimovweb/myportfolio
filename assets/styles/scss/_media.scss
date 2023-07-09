@@ -1,10 +1,10 @@
 // LARGE 
-@media screen and(min-width: 1355px) {
+@media screen and (min-width: 1355px) {
     
 }
 
 // DESCTOP
-@media screen and(max-width: 1350px) {
+@media screen and (max-width: 1350px) {
     .header {
         .container {
             padding: 0 50px;
@@ -19,7 +19,7 @@
 }
 
 // TABLET
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .home {
         margin-top: 25px;
         .container {
@@ -88,7 +88,7 @@
     // End about me
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .scroll {
         display: none;
     }
@@ -254,7 +254,7 @@
 }
 
 // MOBILE
-@media screen and(max-width: 576px) {
+@media screen and (max-width: 576px) {
     .container {
         padding: 0 20px;
     }
@@ -368,7 +368,7 @@
     }
 }
 
-@media  screen and(max-width: 420px) {
+@media  screen and (max-width: 420px) {
     .header {
         .container {
             padding: 0 5px;
@@ -394,7 +394,7 @@
     
 }
 
-@media screen and(max-width: 360px) {
+@media screen and (max-width: 360px) {
     .header {
         &-navigation {
             .themeBtn {

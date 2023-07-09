@@ -7,22 +7,22 @@
       'ru': 'Создаю качественный сайт',
       'en': 'Create a quality website',
    },
-    'home': {
-       'ru': 'главная',
-       'en': 'home',
-    },
-    'me': {
-        'ru': 'обо мне',
-        'en': 'about me'
-    },
-    'portfolio': {
-        'ru': 'портфолио',
-        'en': 'portfolio'
-    },
-    'contact': {
-        'ru': 'контакт',
-        'en': 'contact'
-    },
+   //  'home': {
+   //     'ru': 'главная',
+   //     'en': 'home',
+   //  },
+   //  'me': {
+   //      'ru': 'обо мне',
+   //      'en': 'about me'
+   //  },
+   //  'portfolio': {
+   //      'ru': 'портфолио',
+   //      'en': 'portfolio'
+   //  },
+   //  'contact': {
+   //      'ru': 'контакт',
+   //      'en': 'contact'
+   //  },
     'homeTitle': {
         'ru': 'Ваш Надежный',
         'en': 'Your Reliable'

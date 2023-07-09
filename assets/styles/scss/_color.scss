@@ -1,14 +1,14 @@
 :root {
     --white: #fff;
-    --basic: #11a192;
-    --basic-text: #0e2541;
+    --basic: #4a69bd;
+    --basic-text: #130f40;
     --toggle-bg: url('../../images/svg/dark.svg');
     --lang: url('../../images/png/usa.png')
 }
 
 :root[date-theme = 'dark'] {
-    --white: #222222;
-    --basic: #11a192;
+    --white: #130f40;
+    --basic: #73a0d8;
     --basic-text: #fff;
     --toggle-bg: url('../../images/svg/light.svg');
 }
