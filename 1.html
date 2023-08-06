@@ -5,8 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles/css/main.css">
 </head>
 <body>
-  <img src="./assets/images/png/image_2022-11-21_15-04-49.png" alt="">
+  <section class="contact">
+    <div class="container">
+        <div class="flex-center flex text-center">
+            <h2 class="title__text"><span class="lang-contactTitle">Напишите мне</span>
+                <span class="contact__span border"></span>
+            </h2>
+        </div>
+        <div class="contact-item">
+        <div class="contact-form">
+            <form id="form" class="form">
+                <div class="form__box" for="">
+                    <input class="form__inp form__inp1" id="userName" type="text" maxlength="14" placeholder=" " name="name:" required>
+                    <label for="userName" class="form__label lang-yourName">Ваше имя</label>
+                    <i class="fas fa-user"></i>
+                    <small></small>
+                </div>
+                <div class="form__box" for="">
+                    <input class="form__inp form__inp2" id="userEmail" type="email" placeholder=" " name="email:" required>
+                    <label for="userEmail" class="form__label lang-yourEmail">Ваше почта</label>
+                    <i class="fas fa-envelope"></i>
+                    <small></small>
+                </div>
+                <div class="form__box" for="">
+                    <input class="form__inp form__inp3" id="userPass" type="text" placeholder=" " name="number:" required>
+                    <label for="userPass" class="form__label lang-yourPass">Ваш номер</label>
+                    <i class="fas fa-phone"></i>
+                    <small></small>
+                </div>
+                <div class="form__box">
+                    <textarea class="form__com form__inp4" id="message" placeholder=" " name="messange:" ></textarea>
+                    <label for="message" class="form__label lang-comments">Оставить комментарий</label>
+                    <i class="fas fa-comments"></i>
+                    <small></small>
+                </div>
+                <button type="button" id="submitForm" class="lang-submit form__btn">Отправить</button>
+
+
+            </form>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="assets/js/form.js"></script>
 </body>
 </html>

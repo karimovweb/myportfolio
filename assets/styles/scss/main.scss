@@ -737,12 +737,12 @@ button {
 .contact {
     width: 100%;
     height: auto;
-    background-color: tomato;
+    background-color: var(--white);
     margin-top: 50px;
     padding: 50px 0;
 
     .title__text .border {
-        background-color: var(--white);
+        background-color: #355c7d;
     }
 
     .title__text {
@@ -771,11 +771,10 @@ button {
             width: 350px;
             height: 450px;
             border-radius: 25px;
-            background-color: #fff;
             position: relative;
             padding: 50px;
             text-align: center;
-
+            background-color: #6b9997;
             .form__box {
                 position: relative;
                 width: 100%;
@@ -787,7 +786,7 @@ button {
                     left: 15px;
                     font-size: 20px;
                     transition: .3s;
-                    color: gray;
+                    color: #b9d7d9;
                 }
 
                 #userName {
@@ -798,7 +797,7 @@ button {
                     position: absolute;
                     top: 10px;
                     left: -25px;
-                    color: #0e2541;
+                    color:  #6b9997;
                 }
                 small {
                     position: absolute;
@@ -872,7 +871,7 @@ button {
                 width: 50px;
                 height: 20px;
                 border-radius: 10px;
-                background-color: tomato;
+                background-color: #292522;
                 position: absolute;
 
                 &::after,

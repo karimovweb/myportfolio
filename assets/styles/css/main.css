@@ -7,7 +7,7 @@
 }
 
 :root[date-theme=dark] {
-  --white: #130f40;
+  --white: #333333;
   --basic: #73a0d8;
   --basic-text: #fff;
   --toggle-bg: url("../../images/svg/light.svg");
@@ -949,12 +949,12 @@ button {
 .contact {
   width: 100%;
   height: auto;
-  background-color: tomato;
+  background-color: var(--white);
   margin-top: 50px;
   padding: 50px 0;
 }
 .contact .title__text .border {
-  background-color: var(--white);
+  background-color: #355c7d;
 }
 .contact .title__text {
   color: var(--basic-text);
@@ -981,10 +981,10 @@ button {
   width: 350px;
   height: 450px;
   border-radius: 25px;
-  background-color: #fff;
   position: relative;
   padding: 50px;
   text-align: center;
+  background-color: #6b9997;
 }
 .contact-form form .form__box {
   position: relative;
@@ -997,7 +997,7 @@ button {
   left: 15px;
   font-size: 20px;
   transition: 0.3s;
-  color: gray;
+  color: #b9d7d9;
 }
 .contact-form form .form__box #userName {
   text-transform: capitalize;
@@ -1006,7 +1006,7 @@ button {
   position: absolute;
   top: 10px;
   left: -25px;
-  color: #0e2541;
+  color: #6b9997;
 }
 .contact-form form .form__box small {
   position: absolute;
@@ -1083,7 +1083,7 @@ button {
   width: 50px;
   height: 20px;
   border-radius: 10px;
-  background-color: tomato;
+  background-color: #292522;
   position: absolute;
 }
 .contact-form form .circle-sub::after, .contact-form form .circle-sub::before,
