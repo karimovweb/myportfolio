@@ -32,8 +32,8 @@
         'en': 'Technology Partner'
     },
     'homeTitleInfoText': {
-        'ru': 'В настоящее время очень важно иметь собственный веб-сайт для развития вашего бизнеса.',
-        'en': 'Nowadays it is very important to have your own website to grow your business.'
+        'ru': 'В настоящее время очень важно иметь собственный веб-сайт для развития вашего бизнеса и хороший видео контент.',
+        'en': 'Nowadays it is very important to have your own website to grow your business and have good video content.'
     },
     'cooperateTitle': {
         'ru': 'Сотрудничать со мной',

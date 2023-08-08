@@ -782,6 +782,7 @@ button {
                 position: relative;
                 width: 100%;
                 height: auto;
+                background-color: transparent;
 
                 .form__label {
                     position: absolute;
@@ -790,9 +791,7 @@ button {
                     font-size: 20px;
                     transition: .3s;
                     color: #574b90;
-                    :focus{
-                    background-color: #574b90;
-                    }
+                    
                 }
 
 

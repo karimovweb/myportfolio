@@ -993,6 +993,7 @@ button {
   position: relative;
   width: 100%;
   height: auto;
+  background-color: transparent;
 }
 .contact-form form .form__box .form__label {
   position: absolute;
@@ -1001,9 +1002,6 @@ button {
   font-size: 20px;
   transition: 0.3s;
   color: #574b90;
-}
-.contact-form form .form__box .form__label :focus {
-  background-color: #574b90;
 }
 .contact-form form .form__box .fas {
   position: absolute;
