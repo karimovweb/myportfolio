@@ -949,12 +949,15 @@ button {
 .contact {
   width: 100%;
   height: auto;
-  background-color: var(--white);
+  background-color: #70a1ff;
   margin-top: 50px;
   padding: 50px 0;
 }
+.contact .title__text {
+  color: #11a192;
+}
 .contact .title__text .border {
-  background-color: #355c7d;
+  background-color: #0e3541;
 }
 .contact .title__text {
   color: var(--basic-text);
@@ -984,7 +987,7 @@ button {
   position: relative;
   padding: 50px;
   text-align: center;
-  background-color: #6b9997;
+  background-color: #546de5;
 }
 .contact-form form .form__box {
   position: relative;
@@ -997,16 +1000,16 @@ button {
   left: 15px;
   font-size: 20px;
   transition: 0.3s;
-  color: #b9d7d9;
+  color: #574b90;
 }
-.contact-form form .form__box #userName {
-  text-transform: capitalize;
+.contact-form form .form__box .form__label :focus {
+  background-color: #574b90;
 }
 .contact-form form .form__box .fas {
   position: absolute;
   top: 10px;
   left: -25px;
-  color: #6b9997;
+  color: rgba(22, 223, 213, 0.6980392157);
 }
 .contact-form form .form__box small {
   position: absolute;
@@ -1020,18 +1023,18 @@ button {
   width: 100%;
   height: 40px;
   border: none;
-  border: 1px solid #0e2541;
+  border: 0.5px solid #b4b9c0;
   border-bottom: 3px solid #0e2541;
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 0 15px;
   outline: none;
-  font-size: 20px;
-  transition: 0.5s;
+  font-size: 16px;
+  transition: 500ms;
 }
 .contact-form form .form__inp:focus {
-  border: 1px solid #11a192;
-  border-bottom: 3px solid #11a192;
+  border: 1px solid #786fa6;
+  border-bottom: 3px solid #786fa6;
 }
 .contact-form form .form__inp:not(:-moz-placeholder-shown) ~ .form__label {
   top: -6px;
@@ -1053,15 +1056,16 @@ button {
   border-radius: 20px;
   padding: 5px 15px;
   outline: none;
-  font-size: 18px;
+  font-size: 17px;
   resize: none;
   text-transform: capitalize;
   transition: 0.5s;
   margin-bottom: 15px;
+  font-family: sans-serif;
 }
 .contact-form form textarea:focus {
-  border: 1px solid #11a192;
-  border-bottom: 3px solid #11a192;
+  border: 1px solid #786fa6;
+  border-bottom: 3px solid #786fa6;
 }
 .contact-form form textarea::-webkit-scrollbar {
   width: 0;

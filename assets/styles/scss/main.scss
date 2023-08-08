@@ -737,12 +737,15 @@ button {
 .contact {
     width: 100%;
     height: auto;
-    background-color: var(--white);
+    background-color: #70a1ff;
     margin-top: 50px;
     padding: 50px 0;
 
-    .title__text .border {
-        background-color: #355c7d;
+    .title__text{ 
+        color:#11a192;
+        .border {
+        background-color: #0e3541;
+    }
     }
 
     .title__text {
@@ -774,7 +777,7 @@ button {
             position: relative;
             padding: 50px;
             text-align: center;
-            background-color: #6b9997;
+            background-color: #546de5;
             .form__box {
                 position: relative;
                 width: 100%;
@@ -786,18 +789,18 @@ button {
                     left: 15px;
                     font-size: 20px;
                     transition: .3s;
-                    color: #b9d7d9;
+                    color: #574b90;
+                    :focus{
+                    background-color: #574b90;
+                    }
                 }
 
-                #userName {
-                    text-transform: capitalize;
-                }
 
                 .fas {
                     position: absolute;
                     top: 10px;
                     left: -25px;
-                    color:  #6b9997;
+                    color:  #16dfd5b2;
                 }
                 small {
                     position: absolute;
@@ -813,18 +816,18 @@ button {
                 width: 100%;
                 height: 40px;
                 border: none;
-                border: 1px solid #0e2541;
+                border: 0.5px solid #b4b9c0;
                 border-bottom: 3px solid #0e2541;
                 margin-bottom: 20px;
                 border-radius: 20px;
                 padding: 0 15px;
                 outline: none;
-                font-size: 20px;
-                transition: .5s;
+                font-size: 16px;
+                transition: 500ms;
 
                 &:focus {
-                    border: 1px solid #11a192;
-                    border-bottom: 3px solid #11a192
+                    border: 1px solid #786fa6;
+                    border-bottom: 3px solid #786fa6
 
                 }
 
@@ -845,14 +848,15 @@ button {
                 border-radius: 20px;
                 padding: 5px 15px;
                 outline: none;
-                font-size: 18px;
+                font-size: 17px;
                 resize: none;
                 text-transform: capitalize;
                 transition: .5s;
                 margin-bottom: 15px;
+                font-family:  sans-serif;
                 &:focus {
-                    border: 1px solid #11a192;
-                    border-bottom: 3px solid #11a192;
+                    border: 1px solid #786fa6;
+                    border-bottom: 3px solid #786fa6;
                 }
                 &::-webkit-scrollbar {
                     width: 0;
