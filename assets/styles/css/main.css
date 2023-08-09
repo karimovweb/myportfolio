@@ -949,7 +949,7 @@ button {
 .contact {
   width: 100%;
   height: auto;
-  background-color: #70a1ff;
+  background-color: rgba(112, 162, 255, 0.7333333333);
   margin-top: 50px;
   padding: 50px 0;
 }
@@ -1135,13 +1135,13 @@ button {
   transition: 0.3s;
 }
 .contact-form form .form__btn:hover {
-  background-color: #11a192;
+  background-color: #6ca0ff;
 }
 
 .footer {
   width: 100%;
   height: auto;
-  background-color: #0e2541;
+  background-color: rgba(78, 119, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
