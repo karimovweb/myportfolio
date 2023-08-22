@@ -398,7 +398,7 @@ button {
 .aboutMe {
     width: 100%;
     height: 300px;
-    background-color: var(--basic);
+    background-color: #3e78e4cb;
     margin: 150px 0;
     position: relative;
     &-item {
@@ -737,7 +737,7 @@ button {
 .contact {
     width: 100%;
     height: auto;
-    background-color: #70a2ffbb;
+    background-color: #3e78e4cb;
     margin-top: 50px;
     padding: 50px 0;
 
@@ -777,7 +777,7 @@ button {
             position: relative;
             padding: 50px;
             text-align: center;
-            background-color: #546de5;
+            background-color: #ffffff;
             .form__box {
                 position: relative;
                 width: 100%;
@@ -799,7 +799,7 @@ button {
                     position: absolute;
                     top: 10px;
                     left: -25px;
-                    color:  #16dfd5b2;
+                    color:  #0d2f3a;
                 }
                 small {
                     position: absolute;
@@ -816,7 +816,7 @@ button {
                 height: 40px;
                 border: none;
                 border: 0.5px solid #b4b9c0;
-                border-bottom: 3px solid #0e2541;
+                border-bottom: 3px solid #0e7aff;
                 margin-bottom: 20px;
                 border-radius: 20px;
                 padding: 0 15px;
@@ -825,8 +825,8 @@ button {
                 transition: 500ms;
 
                 &:focus {
-                    border: 1px solid #786fa6;
-                    border-bottom: 3px solid #786fa6
+                    border: 1px solid #553dca;
+                    border-bottom: 3px solid #4527db
 
                 }
 
@@ -842,8 +842,8 @@ button {
             textarea {
                 width: 100%;
                 height: 75px;
-                border: 1px solid #0e2541;
-                border-bottom: 3px solid #0e2541;
+                border: 1px solid #0e7aff;
+                border-bottom: 3px solid #0e7aff;
                 border-radius: 20px;
                 padding: 5px 15px;
                 outline: none;
@@ -854,8 +854,8 @@ button {
                 margin-bottom: 15px;
                 font-family:  sans-serif;
                 &:focus {
-                    border: 1px solid #786fa6;
-                    border-bottom: 3px solid #786fa6;
+                    border: 1px solid #553dca;
+                    border-bottom: 3px solid #4527db;
                 }
                 &::-webkit-scrollbar {
                     width: 0;
@@ -874,7 +874,7 @@ button {
                 width: 50px;
                 height: 20px;
                 border-radius: 10px;
-                background-color: #292522;
+                background-color: #ff0000;
                 position: absolute;
 
                 &::after,
@@ -924,7 +924,10 @@ button {
                 transition: .3s;
 
                 &:hover {
-                    background-color: #6ca0ff;
+                    border-radius: 55px;
+                    width: 55%;
+                    background-color: #6ea1ff;
+                    transition: .5s;
                 }
             }
         }
@@ -935,12 +938,14 @@ button {
 .footer {
     width: 100%;
     height: auto;
-    background-color: #4e77c4cc;
+    background-color: #3e78e4cb   ;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 0;
+    padding: 25px 45px;
     .container {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -950,16 +955,20 @@ button {
         font-weight: 400px;
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
+        padding: 5px 15px;
+        cursor: pointer;
+        &:hover {
+            color: #ED4C67;
+            transition: .3s;
+        }
+        
 
         i {
             margin-right: 10px;
         }
         strong {
-            color: #11a192;
+            color: #17c0eb;
         }
-    }
-    .hover:hover {
-        color: #11a192;
     }
 }
 // End footer

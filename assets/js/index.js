@@ -11,7 +11,7 @@ let loader = document.querySelector('.loader');
 
 window.onload = function() {
     setTimeout(() => {
-        loader.style.display = 'none'
+        loader.style.display = "none"
         window.scrollTo(0, 0)
     }, 1500);
     
@@ -79,7 +79,7 @@ window.addEventListener('scroll', () => {
     let progressHight = (window.pageYOffset / totalHight) * 100;
     let scrolled = window.scrollY;
 
-    settings.style.transform = `rotate(${-scrolled * 2}deg`
+    settings.style.transform = `rotate${scrolled * 2}deg`
     settings.style.top = progressHight + '%'
 
     
@@ -101,7 +101,7 @@ function activeNavigation() {
         elem.classList.remove('active'));
         this.classList.add('active');    
 };
-
+    
 navigation.forEach(elem => 
     elem.addEventListener('click', activeNavigation)
 );

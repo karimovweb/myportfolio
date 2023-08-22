@@ -623,7 +623,7 @@ button {
 .aboutMe {
   width: 100%;
   height: 300px;
-  background-color: var(--basic);
+  background-color: rgba(62, 120, 228, 0.7960784314);
   margin: 150px 0;
   position: relative;
 }
@@ -949,7 +949,7 @@ button {
 .contact {
   width: 100%;
   height: auto;
-  background-color: rgba(112, 162, 255, 0.7333333333);
+  background-color: rgba(62, 120, 228, 0.7960784314);
   margin-top: 50px;
   padding: 50px 0;
 }
@@ -987,7 +987,7 @@ button {
   position: relative;
   padding: 50px;
   text-align: center;
-  background-color: #546de5;
+  background-color: #ffffff;
 }
 .contact-form form .form__box {
   position: relative;
@@ -1007,7 +1007,7 @@ button {
   position: absolute;
   top: 10px;
   left: -25px;
-  color: rgba(22, 223, 213, 0.6980392157);
+  color: #0d2f3a;
 }
 .contact-form form .form__box small {
   position: absolute;
@@ -1022,7 +1022,7 @@ button {
   height: 40px;
   border: none;
   border: 0.5px solid #b4b9c0;
-  border-bottom: 3px solid #0e2541;
+  border-bottom: 3px solid #0e7aff;
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 0 15px;
@@ -1031,8 +1031,8 @@ button {
   transition: 500ms;
 }
 .contact-form form .form__inp:focus {
-  border: 1px solid #786fa6;
-  border-bottom: 3px solid #786fa6;
+  border: 1px solid #553dca;
+  border-bottom: 3px solid #4527db;
 }
 .contact-form form .form__inp:not(:-moz-placeholder-shown) ~ .form__label {
   top: -6px;
@@ -1049,8 +1049,8 @@ button {
 .contact-form form textarea {
   width: 100%;
   height: 75px;
-  border: 1px solid #0e2541;
-  border-bottom: 3px solid #0e2541;
+  border: 1px solid #0e7aff;
+  border-bottom: 3px solid #0e7aff;
   border-radius: 20px;
   padding: 5px 15px;
   outline: none;
@@ -1062,8 +1062,8 @@ button {
   font-family: sans-serif;
 }
 .contact-form form textarea:focus {
-  border: 1px solid #786fa6;
-  border-bottom: 3px solid #786fa6;
+  border: 1px solid #553dca;
+  border-bottom: 3px solid #4527db;
 }
 .contact-form form textarea::-webkit-scrollbar {
   width: 0;
@@ -1085,7 +1085,7 @@ button {
   width: 50px;
   height: 20px;
   border-radius: 10px;
-  background-color: #292522;
+  background-color: #ff0000;
   position: absolute;
 }
 .contact-form form .circle-sub::after, .contact-form form .circle-sub::before,
@@ -1135,19 +1135,24 @@ button {
   transition: 0.3s;
 }
 .contact-form form .form__btn:hover {
-  background-color: #6ca0ff;
+  border-radius: 55px;
+  width: 55%;
+  background-color: #6ea1ff;
+  transition: 0.5s;
 }
 
 .footer {
   width: 100%;
   height: auto;
-  background-color: rgba(78, 119, 196, 0.8);
+  background-color: rgba(62, 120, 228, 0.7960784314);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 0;
+  padding: 25px 45px;
 }
 .footer .container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .footer__info {
@@ -1156,15 +1161,18 @@ button {
   font-weight: 400px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.footer__info:hover {
+  color: #ED4C67;
+  transition: 0.3s;
 }
 .footer__info i {
   margin-right: 10px;
 }
 .footer__info strong {
-  color: #11a192;
-}
-.footer .hover:hover {
-  color: #11a192;
+  color: #17c0eb;
 }
 
 /*----------- Main Style ------*/
@@ -1632,8 +1640,9 @@ button {
     display: none;
   }
   .mobile-portfolio {
-    display: block;
+    display: block !important;
     margin: 50px 0 150px 0;
+    padding: 45px 45px;
   }
   .owl-prev {
     left: -20px;

@@ -356,8 +356,9 @@
     // End portfolio
     
     .mobile-portfolio {
-        display: block;
+        display: block !important;
         margin: 50px 0 150px 0;
+        padding: 45px 45px;
     }
         
     .owl-prev {
