@@ -13,7 +13,7 @@ window.onload = function() {
     setTimeout(() => {
         loader.style.display = "none"
         window.scrollTo(0, 0)
-    }, 1500);
+    }, 3500);
     
     setTimeout(() => {
         borderBottomOne.classList.add('borderBottom')
@@ -106,17 +106,6 @@ navigation.forEach(elem =>
     elem.addEventListener('click', activeNavigation)
 );
 
-let checkNum = 0;
-allPortfolioBtn.addEventListener('click', () => {
-    allPortfolio.classList.toggle('openAllPortfolio')
-    if(checkNum == 0) {
-        allPortfolioBtn.textContent = 'Закрыть проекты'
-        return checkNum = 1;
-    } else {
-        allPortfolioBtn.textContent = 'Все проекты'
-        return checkNum = 0;
-    }
-});
 
 // Start carousel
 $('.owl-carousel').owlCarousel({
