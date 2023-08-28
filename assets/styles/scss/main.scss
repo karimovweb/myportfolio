@@ -160,7 +160,7 @@ button {
         &-navigation {
             width: 350px;
             height: 50px;
-            background-color: var(--basic);
+            background-color: rgb(45, 142, 187);
             border-radius: 10px;
             .themeBtn {
                 position: absolute; 
@@ -200,7 +200,7 @@ button {
                 text-align: center;
 
                 .fad {
-                    line-height: 70px;
+                    line-height: 64px;
                     transition: .3s;
                 }
 
@@ -209,18 +209,19 @@ button {
                     top: 30px;
                     opacity: 0;
                     transition: .3s;
-                    transform: translateY(20px);
+                    transform: translateY(12px);
                 }
             }
         }
             
         .active {
             .fad {
-                transform: translateY(-35px);
+                transform: translateY(10px);
+                transform: translateX(5px);
                 position: relative;
                 z-index: 1;
-                color: #fff;
-                font-size: 25px;
+                color: rgb(0, 183, 255);
+                font-size: 30px;
             }
         }
         .active {
@@ -266,7 +267,7 @@ button {
             }
         }
 
-        &-list:nth-child(1).active ~ .indicator {
+        &-list:nth-child(1).active  ~ .indicator {
             transform: translateX(70px * 0);
          }
         &-list:nth-child(2).active ~ .indicator {
@@ -501,200 +502,8 @@ button {
 }
 // End technology
 
-.portfolio {
-    margin: 50px 0;
-    .owl-nav button {
-        width: 50px !important;
-        height: 50px !important;
-        background-color: var(--basic) !important;
-        border-radius: 50% !important;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 60px !important;
-        color: #000 !important;
-        outline: none !important;
-    }
-    .owl-nav button span {
-        position: absolute;
-        top: -5px;
-        display: block;
-        width: 50px !important;
-        height: 50px !important;
-        z-index: 99;
-        color: var(--white);
-        font-weight: 300;
-    }
-    .owl-nav button:hover {
-        background-color: var(--basic-text) !important;
-    }
-    .owl-prev {
-        left: 0px;
-    }
-    .owl-next {
-        right: 0px;
-    }
-    .owl-carousel button.owl-dot span{
-        background-color: var(--basic) !important;
-    }
-    .owl-carousel button.active span{
-        background-color: tomato !important;
-    }
-    &-item {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: relative;
-        padding: 0 25px;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
-    .openAllPortfolio {
-        max-height: 500px;
-        overflow-y: scroll;
-    }
-
-    &-list {
-        // width: 47.5%;
-        height: 300px;
-        position: relative;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0px 5px 5px 0px var(--basic);
-        z-index: 2;
-        margin: 20px 0;
-
-        .portfolio__img,
-        .hidden {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 15px;
-            z-index: 1;
-            object-fit: cover;
-        }
-        .hidden {
-            top: -100%;
-            backdrop-filter: invert(.7);
-            transition: 1s ease;
-            z-index: -2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &__btn {
-                width: 250px;
-                height: 50px;
-                border-radius: 10px;
-                background-color: var(--basic);
-                color: var(--white);
-                font-size: 20px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-
-        &:hover .hidden {
-            z-index: 2;
-            top: 0;
-        }
-    }
-
-    .allProjects-btn {
-        width: 170px;
-        height: 45px;
-        border-radius: 20px;
-        background-color: var(--basic);
-        color: var(--white);
-        font-size: 14px;    
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: .3s;
-        margin-top: 20px;
-        display: none;
-
-        &:hover {
-            background-color: var(--basic-text);
-        }
-    }
-
-}
 // End portfolio
 
-.mobile-portfolio {
-    display: none;
-    &-list {      
-        width: 242px;
-        height: 480px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 30px;
-        padding: 5px;
-
-        .hidden {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 94%;
-            height: 88%;
-            object-fit: cover;
-            z-index: 3;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            transition: 1s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-
-            &__btn {
-                width: 200px;
-                height: 50px;
-                border-radius: 10px;
-                background-color: var(--basic);
-                color: var(--white);
-                font-size: 20px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-
-        &:hover .hidden {
-            opacity: 1;
-        }
-
-    }
-    .iphone {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            z-index: 2;
-    }
-    &__img {
-        position: absolute;
-        top: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 95%;
-        max-height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        border-radius: 20px;
-    }
-    .owl-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 .owl-nav button {
     width: 50px !important;
@@ -958,8 +767,9 @@ button {
         padding: 5px 15px;
         cursor: pointer;
         &:hover {
-            color: #ED4C67;
-            transition: .3s;
+            color: #000000;
+            transition: 500ms;
+            font-weight: 600px;
         }
         
 
@@ -967,7 +777,7 @@ button {
             margin-right: 10px;
         }
         strong {
-            color: #17c0eb;
+            color: #0bdaa6;
         }
     }
 }

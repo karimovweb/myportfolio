@@ -99,7 +99,7 @@ window.addEventListener('scroll', () => {
 function activeNavigation() {
     navigation.forEach(elem =>
         elem.classList.remove('active'));
-        this.classList.add('active');    
+        this.classList.add('active');                           
 };
     
 navigation.forEach(elem => 
