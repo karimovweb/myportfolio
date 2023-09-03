@@ -13,7 +13,7 @@ window.onload = function() {
     setTimeout(() => {
         loader.style.display = "none"
         window.scrollTo(0, 0)
-    }, 3500);
+    }, 1500);
     
     setTimeout(() => {
         borderBottomOne.classList.add('borderBottom')
