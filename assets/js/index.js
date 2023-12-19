@@ -76,7 +76,7 @@ window.addEventListener('scroll', () => {
       }
     //   Scrollbar
     let totalHight = document.body.scrollHeight - window.innerHeight;
-    let progressHight = (window.pageYOffset / totalHight) * 100;
+    let progressHight = (window.pageOffset / totalHight) * 100;
     let scrolled = window.scrollY;
 
     settings.style.transform = `rotate${scrolled * 2}deg`

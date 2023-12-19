@@ -1,0 +1,22 @@
+.portfolio{
+    width: 45%;
+    height: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.gallery-cell {
+    width: 66%;
+    height: 300px;
+    margin-right: 10px;
+    background: #4a69bd;
+}
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}

@@ -231,6 +231,30 @@
   font-style: normal;
   font-display: swap;
 }
+.portfolio {
+  width: 45%;
+  height: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  background: #4a69bd;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -239,11 +263,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-::-moz-selection {
-  background: var(--basic);
-  color: var(--white);
 }
 
 ::selection {
@@ -293,9 +312,7 @@ body::-webkit-scrollbar {
 }
 
 .scroll i {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .scroll {
@@ -367,9 +384,7 @@ button {
   background-image: var(--toggle-bg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .header {
@@ -643,8 +658,7 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .aboutMe-list {
   height: 300px;
@@ -784,8 +798,7 @@ button {
 .contact-info {
   width: 47.5%;
   height: 400px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 25px;
 }
 .contact-form {
@@ -848,12 +861,6 @@ button {
   border: 1px solid #553dca;
   border-bottom: 3px solid #4527db;
 }
-.contact-form form .form__inp:not(:-moz-placeholder-shown) ~ .form__label {
-  top: -6px;
-  background-color: #fff;
-  font-size: 16px;
-  padding: 0 5px;
-}
 .contact-form form .form__inp:focus ~ .form__label, .contact-form form .form__inp:not(:placeholder-shown) ~ .form__label {
   top: -6px;
   background-color: #fff;
@@ -881,12 +888,6 @@ button {
 }
 .contact-form form textarea::-webkit-scrollbar {
   width: 0;
-}
-.contact-form form textarea:not(:-moz-placeholder-shown) ~ .form__label {
-  top: -6px;
-  background-color: #fff;
-  font-size: 16px;
-  padding: 0 5px;
 }
 .contact-form form textarea:focus ~ .form__label, .contact-form form textarea:not(:placeholder-shown) ~ .form__label {
   top: -6px;
